@@ -131,14 +131,14 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    BASE_DIR / 'static',
+    '/home/ubuntu/gestaderh/media',
 ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, "static/")
 
 MEDIA_URL = '/media/'
 
-MEDIA_ROOT = BASE_DIR / 'media'
+MEDIA_ROOT = '/home/ubuntu/gestaderh/media'
 
 LOGIN_REDIRECT_URL = 'home'
 
