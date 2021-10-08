@@ -134,11 +134,11 @@ STATICFILES_DIRS = [
     '/home/ubuntu/gestaderh/media',
 ]
 
-STATIC_ROOT = os.path.join(BASE_DIR, "static/")
+STATIC_ROOT = BASE_DIR / 'static/'
 
 MEDIA_URL = '/media/'
 
-MEDIA_ROOT = '/home/ubuntu/gestaderh/media'
+MEDIA_ROOT = BASE_DIR / 'media/'
 
 LOGIN_REDIRECT_URL = 'home'
 
