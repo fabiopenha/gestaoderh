@@ -131,7 +131,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    '/home/ubuntu/gestaderh/media',
+    '/home/ubuntu/gestaoderh/media',
 ]
 
 STATIC_ROOT = BASE_DIR / 'static/'
