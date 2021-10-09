@@ -10,9 +10,9 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
+import os
 from pathlib import Path
 
-import os
 
 os.environ['PYTHON_EGG_CACHE'] = '/usr/local/pylons/python-eggs'
 
@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-k)6h@hva4hi#0_$=j!7%eod6(7uc&8ejb)&z^+z32p@otld6ry
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['18.117.195.60']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -131,14 +131,12 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    '/home/ubuntu/gestaoderh/media',
+    os.path.join(BASE_DIR, 'static'),
 ]
-
-STATIC_ROOT = BASE_DIR / 'static/'
 
 MEDIA_URL = '/media/'
 
-MEDIA_ROOT = BASE_DIR / 'media/'
+MEDIA_ROOT = BASE_DIR / 'media'
 
 LOGIN_REDIRECT_URL = 'home'
 
